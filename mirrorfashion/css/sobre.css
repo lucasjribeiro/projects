@@ -1,0 +1,200 @@
+html {
+  margin: 0px;
+}
+body {
+  color: #333333;
+  font-family: "Lucida	Sans	Unicode", "Lucida	Grande", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 940px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.container {
+  margin: 0 auto;
+  width: 940px;
+  position: relative;
+}
+
+
+
+
+/*--Cabeçalho--*/
+.logo {
+  margin: 0px;
+}
+
+.sacola {
+  background-image: url(../img/sacola.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  font-size: 14px;
+  padding-right: 35px;
+  text-align: right;
+  width: 140px;
+  padding-top: 8px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0px;
+}
+
+.menu-opcoes {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.menu-opcoes ul {
+  font-size: 15px;
+  margin: 0px;
+}
+.menu-opcoes a {
+  color: #003366;
+}
+.menu-opcoes ul li {
+  display: inline-block;
+  margin-left: 0px;
+}
+/*Brinks-nav*/
+.container .menu-opcoes a {
+  color: blue;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 7px 10px 5px;
+  display: inline-block;
+}
+.container .menu-opcoes a:hover{
+  background-color: blue;
+  color: white;
+  border-radius: 15px;
+  transform: scale(1.2);
+  transform: translate(0px, -2px);
+  transition: 0.05s ease-in-out;
+}
+/*Fim-Brinks-nav*/
+/*--Fim-Cabeçalho--*/
+
+
+
+
+/*---Main---*/
+article h1:not(.logo) {
+  background-image: url(../img/sobre-background.jpg);
+  padding: 15px;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 30px 0 20px;
+}
+section p strong {
+  font-weight: bolder;
+}
+h2 {
+  border-bottom: 2px solid #333333;
+  margin: 30px 0 20px;
+  font-size: 24px;
+  font-weight: bolder;
+  padding-bottom: 5px;
+}
+section p em {
+  font-style: italic;
+}
+figure {
+  background-color: #f2eded;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 15px;
+  margin: 30px;
+}
+figcaption {
+  font-style: italic;
+  margin-top: 10px;
+}
+section p {
+  padding: 10px 45px;
+  text-indent: 15px;
+  line-height: 18px;
+}
+section p::first-letter {
+  font-weight: bold;
+}
+section > p:nth-child(1) {
+  text-indent: 0;
+}
+#centro-distribuicao {
+  margin-left: auto;
+  margin-right: auto;
+  width: 550px;
+}
+#familia-pelho {
+  float: right;
+  margin: 0 0 10px 10px;
+}
+section ul {
+  list-style: disc;
+  margin: 0 45px 20px;
+  line-height: 18px;
+}
+/*--Fim-Main--*/
+
+
+
+
+/*---Footer---*/
+footer{
+  clear: both; /*Fixar elementos Flutuantes*/
+  background-image:	url(../img/fundo-rodape.png);
+  padding: 20px 0;
+}
+
+.social a[href*="facebook.com"]	{
+  background-image:	url(../img/facebook.png);
+}
+  .social a[href*="twitter.com"]	{
+  background-image:	url(../img/twitter.png);
+}
+  .social a[href*="plus.google.com"]	{
+  background-image:	url(../img/googleplus.png);
+}
+
+footer .container{
+  position: relative;
+}
+.social{
+  position: absolute;
+  /*width: 200;*/
+  height: 32px;
+  right: 0;
+  top: 50%;
+  /*margin-right: 0;*/
+  margin-top: -16px; /*Metade do Valor da Altura*/
+  /* ou
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);*/
+}
+.social li{
+  display: inline-block;
+  margin-right: 25px;
+}
+.social a{
+  display: block;
+  height: 32px;
+  width: 32px;
+  text-indent: -9999px;
+  transition: 0.05s;
+}
+.social a:hover{
+  transform: scale(1.2);
+  transition: ease-in-out;
+  transition: 0.05s;
+}
+footer span{
+  color: #f2eded;
+  margin-left: 200px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+/*--Fim-Footer--*/

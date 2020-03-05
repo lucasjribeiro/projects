@@ -1,0 +1,7 @@
+n1 = float(input('Nota do Primeiro Bimestre: '))
+n2 = float(input('Nota do Segundo Bimestre: '))
+n3 = float(input('Nota do Terceiro Bimestre: '))
+n4 = float(input('Nota do Quarto Bimestre: '))
+s = (n1 + n2 + n3 + n4)
+#print ('Nota Acumulada: {}'.format(n1 + n2 + n3 + n4))
+print ('Média: {}'.format(s/4))

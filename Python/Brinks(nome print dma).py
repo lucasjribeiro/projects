@@ -1,0 +1,6 @@
+n = input ('Qual é o seu nome? ')
+a = input ('Dia de Nascimento: ')
+b = input ('Mês de Nascimento: ')
+c = input ('Ano de Nascimento: ')
+print ('Tudo bem {}?'.format(n))
+print ('Consta aqui em nosso Sistema que você nasceu no dia {} de {} de {}'.format(a,b,c))

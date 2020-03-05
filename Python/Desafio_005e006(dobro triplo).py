@@ -1,0 +1,8 @@
+n = int(input('Digite um número: '))
+print ('Número {:_^10} \nSeu Antecessor é: {} \nSeu Sucessor é: {}'.format(n, n-1, n+1))
+#print ('Seu Antecessor é: {}'.format(n-1))
+#print ('Seu Sucessor é: {}'.format(n+1))
+print ('Seu dobro é: {}'.format(n*2))
+print ('Seu triplo é: {}'.format(n*3))
+print ('Sua Raiz Quadrada é: {:.0f}'.format(n**(1/2)))
+print ('Raiz Quadrada: {}'.format(n**0.5))
