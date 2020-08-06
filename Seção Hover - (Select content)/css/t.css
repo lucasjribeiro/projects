@@ -26,7 +26,13 @@ li{
     border: 1px solid rgb(221, 221, 221);
     box-shadow: inset 0 0 5px rgb(223, 223, 223);
 }
-li:hover{
+span{
+    display: inline-block;
+    width: 200px;
+    height: 350px;
+    transition: 0.2s ease-in;
+}
+ul > li:hover span{
     background-color: rgb(0, 200, 200);
     bottom: 10px;
     transition: 0.2s ease;
@@ -66,13 +72,13 @@ ul{
     left: 25px;
     border-radius: 100%;
 }
-li:hover .circulo{
+ul > li:hover .circulo{
     background:	linear-gradient(180deg, rgb(0, 220, 220) 0%, rgb(0, 200, 200) 50%, rgb(0, 180, 180) 100%);
     box-shadow: 45deg, 10px rgb(0, 180, 180);
     transform: rotate(720deg);
     transition: 1s;
 }
-li:hover .bola{
+ul > li:hover .bola{
     background-color: white;
 }
 h3{
@@ -81,8 +87,9 @@ h3{
     color: rgb(0, 220, 220);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
+    transition: all 0.2s;
 }
-li:hover h3{
+ul > li:hover h3{
     color: white;
 }
 p{
@@ -90,7 +97,8 @@ p{
     color: #333;
     font-size: 16px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: all 0.2s;
 }
-li:hover p{
+ul > li:hover p{
     color: white;
 }

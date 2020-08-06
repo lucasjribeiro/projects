@@ -230,6 +230,10 @@ button:hover {
 .container .painel li:nth-child(2n):hover {
   transform: scale(1.05) rotate(2deg);
 }
+.container .painel li:hover figcaption {
+  color: blue;
+  background-color: rgb(228, 228, 228);
+}
 figcaption {
   margin-top: 5px;
 }
