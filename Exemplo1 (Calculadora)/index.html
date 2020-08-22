@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="all">
+        <div class="visor" id="visor"></div>
+        <div class="main">
+            <table>                    <!-- <tr>(linha), <td>(coluna)-->
+                <tr>
+                    <td><input type="button" name="del" value="C" id="del" onclick=""></td>
+                    <td><input type="button" name="raiz" value="&radic;" id="raiz" onclick="aparecer()"></td>
+                    <td><input type="button" name="porcento" value="%" id="porcento" onclick="aparecer()"></td>
+                    <td><input type="button" name="dividir" value="&divide;" id="dividir" onclick="aparecer()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="sete" value="7" id="sete" onclick="aparecer()"></td>
+                    <td><input type="button" name="oito" value="8" id="oito" onclick="aparecer()"></td>
+                    <td><input type="button" name="nove" value="9" id="nove" onclick="aparecer()"></td>
+                    <td><input type="button" name="multiplicar" value="x" id="multiplicar" onclick="aparecer()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="quatro" value="4" id="quatro" onclick="aparecer()"></td>
+                    <td><input type="button" name="cinco" value="5" id="cinco" onclick="aparecer()"></td>
+                    <td><input type="button" name="seis" value="6" id="seis" onclick="aparecer()"></td>
+                    <td><input type="button" name="subtrair" value="-" id="subtrair" onclick="aparecer()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="um" value="1" id="um" onclick="aparecer()"></td>
+                    <td><input type="button" name="dois" value="2" id="dois" onclick="aparecer()"></td>
+                    <td><input type="button" name="tres" value="3" id="tres" onclick="aparecer()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="zero" value="0" id="zero" onmouseover="aparecer()"></td>
+                    <td><input type="button" name="ponto" value="." id="ponto" onclick="aparecer()"></td>
+                    <td><input type="button" name="resultado" value="=" id="resultado" onclick=""></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="somar" value="+" id="somar" onclick="aparecer()"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        function cima(){
+            var c = document.getElementById("um")
+            c.value = "sdmhgf"
+        }
+
+        raiz = document.getElementById("raiz")
+        porcento = document.getElementById("porcento")
+        dividir = document.getElementById("dividir")
+
+        sete = document.getElementById("sete")
+        oito = document.getElementById("oito")
+        nove = document.getElementById("nove")
+        multiplicar = document.getElementById("multiplicar")
+
+        quatro = document.getElementById("quatro")
+        cinco = document.getElementById("cinco")
+        seis = document.getElementById("seis")
+        subtrair = document.getElementById("subtrair")
+
+        um = document.getElementById("um")
+        dois = document.getElementById("dois")
+        tres = document.getElementById("tres")
+
+        zero = document.getElementById("zero")
+        ponto = document.getElementById("ponto")
+        somar = document.getElementById("somar")
+
+        visor = document.querySelector("div #visor")
+
+        function aparecer(){
+            zero.style.background = 'green'
+            visor.innerHTML = zero
+            visor.style.background = "lightblue"
+        }
+    </script>
+
+
+</body>
+</html>
